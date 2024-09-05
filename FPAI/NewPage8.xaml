@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FPAI.NewPage8"
+             Title="Cuestionario">
+
+    <AbsoluteLayout>
+       
+        <Image Source="fs.png"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+      
+        <Label x:Name="QuestionLabel"
+               Text="1. ¿Cuál es el color del sable de luz de Luke Skywalker?"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" 
+               TextColor="White"
+               FontSize="20"
+               FontAttributes="Bold"
+               AbsoluteLayout.LayoutBounds="0.5,0.6,1,0.2"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+      
+        <Button x:Name="Button1"
+                Text="Azul"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnAnswerButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5,0.45,0.8,0.1"
+                AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button x:Name="Button2"
+                Text="Verde"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnAnswerButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5,0.35,0.8,0.1"
+                AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button x:Name="Button3"
+                Text="Rojo"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnAnswerButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5,0.25,0.8,0.1"
+                AbsoluteLayout.LayoutFlags="All"/>
+
+        <Button x:Name="Button4"
+                Text="Naranja"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnAnswerButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5,0.15,0.8,0.1"
+                AbsoluteLayout.LayoutFlags="All"/>
+
+       
+        <Label x:Name="FeedbackLabel"
+               Text=""
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               AbsoluteLayout.LayoutBounds="0.5,0.05,1,0.1"
+               AbsoluteLayout.LayoutFlags="All"
+               TextColor="Red"
+               FontSize="16"/>
+
+       
+        <Button x:Name="NextButton"
+                Text="Siguiente"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnNextButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5,0.05,0.5,0.1"
+                AbsoluteLayout.LayoutFlags="All"
+                IsVisible="False"/>
+
+       
+        <Button x:Name="HomeButton"
+                Text="Inicio"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Clicked="OnHomeButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5,0.85,0.5,0.1"
+                AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
+</ContentPage>
+ 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FPAI.NewPage2"
+             Title="MENU">
+
+    <AbsoluteLayout>
+      
+        <Image Source="fs.png"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+       
+        <VerticalStackLayout Padding="20" Spacing="10"
+                             AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+                             AbsoluteLayout.LayoutFlags="PositionProportional"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center">
+        
+            <Label Text="CONTENIDO"
+                   FontSize="24"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+           
+            <Button Text="1"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    Clicked="GotoNewPage3"/>
+
+            <Button Text="2"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    Clicked="GotoNewPage4"/>
+
+            <Button Text="3"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    Clicked="GotoNewPage5"/>
+
+            <Button Text="4"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    Clicked="GotoNewPage6"/>
+
+            <Button Text="5"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    Clicked="GotoNewPage7"/>
+
+            <Button Text="6"
+                    BackgroundColor="Yellow"
+                    TextColor="Black"
+                    Clicked="GotoNewPage8"/>
+        </VerticalStackLayout>
+    </AbsoluteLayout>
+</ContentPage>
